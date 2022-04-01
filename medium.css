@@ -456,6 +456,21 @@ nav ul{
  
     margin-bottom: 20px;
 }
+li{
+ 
+    list-style-type: none;
 
+    opacity: var(--main-opacity);
+    cursor: pointer;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: .7rem;
+    /* color: rgba(0, 81, 255, 0.788); */
+    transition: .2s;
+    z-index: 1;
+    display: inline-block;
+    margin-left: 45px;
+    
+}
 }
 
