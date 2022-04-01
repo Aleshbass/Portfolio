@@ -8,7 +8,7 @@ let projects= [
      Once you are logged in, try to change site theme, like a post, uplaod a picture with a caption too. I used a lot of ES6 syntax on this one.`
  },
  {
-     name: "Cart Project",
+     name: "Tech-Educa",
      link: "https://abasscart.netlify.app",
      src: "02.jpg",
      details: `This cart projects includes basic cart function such has clear, remove, add and substract cart item.
@@ -29,7 +29,7 @@ let projects= [
      like "writing-mode", "webkit-text-stroke", etc. I used an external JS library for the first time too. In additon, I also used the window scrollTo method to return page to default scrool position.`
  },
  {
-     name: "Calculator Project",
+     name: "Fitogram",
      link: "https://abasscalculator.netlify.app",
      src: "05.jpg",
      details: `This calculator project helped me develop confidence in javascript.`
@@ -49,12 +49,17 @@ let project_All= [...document.querySelectorAll('.pic-collection span> img')]
 
 project_All.forEach( (project, index)=>{
  project.addEventListener('click', ()=>{
+     
 
-if(project.classList.contains('active')){
-    project.classList.remove('active')
-}
+    project_All.forEach(project=>{
 
-project.classList.add('active')
+        project.parentElement.classList.remove('active')
+    
+    })
+    
+
+
+project.parentElement.classList.add('active')
 
 console.log(index)
 
@@ -62,7 +67,7 @@ if(project.classList.contains('active')){
   project_image.src= projects[index].src;
   project_details.innerHTML= projects[index].details;
   project_link.dataset.link= projects[index].link;
-   project_name.innerHTML= projects[index].name;
+  project_name.innerHTML= projects[index].name
 
 }
 
@@ -169,8 +174,6 @@ SendEmail();
 
 })
 
-// display CV
-
 let viewcv= document.querySelector('#CV')
 viewcv.addEventListener('click', ()=>{
 
@@ -178,7 +181,6 @@ viewcv.addEventListener('click', ()=>{
 window.open(pdfUrl, '_blank');
 
 })
-
 
 
 // send email
@@ -195,7 +197,6 @@ window.open(pdfUrl, '_blank');
     emailjs.send("Abass1997", "Abass1997", details)
     .then(function(res){
 
-        console.log(res)
     })
 
 
