@@ -8,7 +8,7 @@ let projects= [
      Once you are logged in, try to change site theme, like a post, uplaod a picture with a caption too. I used a lot of ES6 syntax on this one.`
  },
  {
-     name: "Tech-Educa",
+     name: "Cart Project",
      link: "https://abasscart.netlify.app",
      src: "02.jpg",
      details: `This cart projects includes basic cart function such has clear, remove, add and substract cart item.
@@ -29,7 +29,7 @@ let projects= [
      like "writing-mode", "webkit-text-stroke", etc. I used an external JS library for the first time too. In additon, I also used the window scrollTo method to return page to default scrool position.`
  },
  {
-     name: "Fitogram",
+     name: "Calculator Project",
      link: "https://abasscalculator.netlify.app",
      src: "05.jpg",
      details: `This calculator project helped me develop confidence in javascript.`
