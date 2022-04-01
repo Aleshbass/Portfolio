@@ -62,7 +62,7 @@ if(project.classList.contains('active')){
   project_image.src= projects[index].src;
   project_details.innerHTML= projects[index].details;
   project_link.dataset.link= projects[index].link;
-  project_name= projects[index].name
+   project_name.innerHTML= projects[index].name;
 
 }
 
