@@ -226,7 +226,6 @@ section.first{
     font-weight: 500;  
     line-height: 33px;
     text-align: center;
- 
     margin-bottom: 20px;
 }
 
@@ -313,7 +312,7 @@ section.second .social >span img{
 }
 
 .skill{
-    width: 150px;
+    width: 145px;
  
     
 }
@@ -327,7 +326,7 @@ section.second .social >span img{
 .skill p{
     font-size: .6rem;
     opacity: var(--main-opacity);
-    width: 105px;
+    width: 97px;
     line-height: 18px;
 
 }
@@ -360,6 +359,9 @@ section.second .social >span img{
 
 .page-four p{
     margin-top: 20px;
+    
+    margin-bottom: 30px;
+ 
     color: white;
     opacity: var(--main-opacity);
     font-size: var(--main-fontsize);
@@ -368,8 +370,7 @@ section.second .social >span img{
     font-family: var(--second-font);
     font-weight: 200;
     text-align: left;
-    line-height: 34px;
-    margin-bottom: 30px;
+    line-height: 30px;
 }
 
 
