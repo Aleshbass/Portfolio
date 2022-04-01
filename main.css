@@ -234,7 +234,7 @@ section.first{
     margin-top: 20px;
     color: white;
     opacity: var(--main-opacity);
-    font-size: var(--main-fontsize);
+  
     font-size: .9rem;
     letter-spacing: 1px;
     font-family: var(--second-font);
@@ -242,7 +242,21 @@ section.first{
     text-align: left;
     line-height: 30px;
 }
-
+.page-four p{
+    margin-top: 20px;
+    
+    margin-bottom: 30px;
+ 
+    color: white;
+    opacity: var(--main-opacity);
+  
+    font-size: .9rem;
+    letter-spacing: 1px;
+    font-family: var(--second-font);
+    font-weight: 200;
+    text-align: left;
+    line-height: 30px;
+}
 
 
 
@@ -312,7 +326,7 @@ section.second .social >span img{
 }
 
 .skill{
-    width: 145px;
+    width: 135px;
  
     
 }
@@ -357,21 +371,7 @@ section.second .social >span img{
 }
 
 
-.page-four p{
-    margin-top: 20px;
-    
-    margin-bottom: 30px;
- 
-    color: white;
-    opacity: var(--main-opacity);
-    font-size: var(--main-fontsize);
-    font-size: .9rem;
-    letter-spacing: 1px;
-    font-family: var(--second-font);
-    font-weight: 200;
-    text-align: left;
-    line-height: 30px;
-}
+
 
 
 /* page five starts here */
