@@ -57,19 +57,15 @@ project_All.forEach( (project, index)=>{
     
     })
     
-
-
 project.parentElement.classList.add('active')
 
-console.log(index)
 
-if(project.classList.contains('active')){
   project_image.src= projects[index].src;
   project_details.innerHTML= projects[index].details;
   project_link.dataset.link= projects[index].link;
   project_name.innerHTML= projects[index].name
 
-}
+
 
  })
 
@@ -197,6 +193,7 @@ window.open(pdfUrl, '_blank');
     emailjs.send("Abass1997", "Abass1997", details)
     .then(function(res){
 
+        console.log(res)
     })
 
 
