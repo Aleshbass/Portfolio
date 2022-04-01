@@ -169,6 +169,16 @@ SendEmail();
 
 })
 
+// display CV
+
+let viewcv= document.querySelector('#CV')
+viewcv.addEventListener('click', ()=>{
+
+    let pdfUrl= "mycv.pdf"
+window.open(pdfUrl, '_blank');
+
+})
+
 
 
 // send email
