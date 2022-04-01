@@ -513,6 +513,7 @@ font-size: .9rem;
 
 .page-six button{
     margin: 20px;
+    margin-bottom: 10px;
     padding: 9px 19px;
     font-family: var(--main-font);
     background-color: var(--side1-color);
@@ -557,7 +558,7 @@ section.last{
 
 .page-seven{
  position: relative;
-margin-top: 130px;
+margin-top: 150px;
     height: 510px;
 }
 
