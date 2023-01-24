@@ -24,6 +24,8 @@
     --side2-color:#4cac9f;
 }
 
+
+
 body{
     scroll-behavior: smooth;
     color: white;
@@ -36,6 +38,24 @@ body{
     letter-spacing: var(--main-letterspace);
     overflow-x: hidden;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+.page-two h3{
+    font-size: 1rem;
+}
+
+.page-two h4::first-letter{
+    font-size: 1.3rem;
+}
+
+.page-three aside::first-letter{
+    font-size: 10rem;
+    color: #4cac9f;
+}
+
 
 /* First page*/
 
@@ -52,9 +72,12 @@ height: 590px;
    background-color: var(--bg1-color);
    color: white;
    position: relative;
+  
  
 
 }
+
+
 
 nav{
 width: 100%;
@@ -81,7 +104,7 @@ li{
     transition: .2s;
     z-index: 1;
     display: inline-block;
-    margin-left: 35px;
+    margin-left: 45px;
     
 }
 
@@ -226,6 +249,7 @@ section.first{
     font-weight: 500;  
     line-height: 33px;
     text-align: center;
+ 
     margin-bottom: 20px;
 }
 
@@ -234,29 +258,15 @@ section.first{
     margin-top: 20px;
     color: white;
     opacity: var(--main-opacity);
-  
+    font-size: var(--main-fontsize);
     font-size: .9rem;
     letter-spacing: 1px;
     font-family: var(--second-font);
     font-weight: 200;
-    text-align: left;
+    text-align: center;
     line-height: 30px;
 }
-.page-four p{
-    margin-top: 20px;
-    
-    margin-bottom: 30px;
- 
-    color: white;
-    opacity: var(--main-opacity);
-  
-    font-size: .9rem;
-    letter-spacing: 1px;
-    font-family: var(--second-font);
-    font-weight: 200;
-    text-align: left;
-    line-height: 30px;
-}
+
 
 
 
@@ -314,34 +324,30 @@ section.second .social >span img{
 
 .skill-container{
     display: grid;
-    height: 300px;
+    height: 350px;
     /* width: 460px; */
-    width: 90%;
-    grid-template-columns: 1fr 1fr 1fr;
+    width: 95%;
+    grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr;
     position: absolute;
-    top: 14%;
- 
+    top: 24%;
     z-index: 3;
+   
 }
 
-.skill{
-    width: 135px;
  
-    
-}
+
 .skill h4{
     color: var(--side2-color);
-    font-size: 1.2rem;
-    margin-bottom: -1px;
+    font-size: 1.1rem;
+ 
+    text-align: center;
     
 }
 
 .skill p{
-    font-size: .6rem;
-    opacity: var(--main-opacity);
-    width: 97px;
-    line-height: 18px;
+    font-size: .8rem;
+    text-align: center;
 
 }
 
@@ -355,6 +361,7 @@ section.second .social >span img{
     line-height: 50px;
     color: white;
     opacity: var(--main-opacity);
+    text-align: center;
   
 }
 
@@ -366,12 +373,24 @@ section.second .social >span img{
     font-weight: 500;  
     line-height: 33px;
     
-    text-align: left;
+    text-align: center;
     margin-bottom: 25px;
 }
 
 
-
+.page-four p{
+    margin-top: 20px;
+    color: white;
+    opacity: var(--main-opacity);
+    font-size: var(--main-fontsize);
+    font-size: .9rem;
+    letter-spacing: 1px;
+    font-family: var(--second-font);
+    font-weight: 200;
+    text-align: center;
+    line-height: 34px;
+    margin-bottom: 30px;
+}
 
 
 /* page five starts here */
@@ -389,41 +408,43 @@ section.second .social >span img{
 }
 
 .page-five{
+    height: 60%;
    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+ 
+background-color:black;
 }
 
 .picture{
- 
-    height: 74%;
+
+    height: 75%;
     /* border: 2px solid var(--side1-color); */
     width: 90%;
-
-    margin: 15px  auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 25px  auto 0px auto;
 }
 
 .picture img{
     width: 100%;
-    height: 90%;
+    height: 93%;
 }
 
 .picture p{
     text-align: center;
-    font-size: .7rem;
-    color: rgba(255, 255, 255, 0.544);
+    font-size: 1rem;
+    color: white
     
    
 }
 
 .picture p>span{
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-family: var(--main-font);
-    font-weight: 700;
+    
     color: var(--side1-color);
-    color:  rgba(62, 122, 252, 0.788);
-    opacity: 1;
+
+    
 }
 
 .pic-collection{
@@ -439,12 +460,29 @@ section.second .social >span img{
 .pic-collection > span{
     display: block;
 
-    height: 40px;
-    width: 13%;
+    height: 50px;
+    width: 10%;
     margin: auto;
     position: relative;
     transition: all .1s linear;
+    cursor: pointer;
    
+}
+
+
+.pic-collection span.active{
+
+    border: 2px solid var(--side1-color);
+ 
+    
+    transform: scale(1.7);
+}
+
+
+.pic-collection span:hover{
+
+    border: 2px solid var(--side1-color);
+    transform: scale(1.7);
 }
 
 .pic-collection > span img#svg{
@@ -470,6 +508,10 @@ section.second .social >span img{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    margin: 25px;
+    padding: 10px;
+   
 }
 
 .page-six .inner-six{
@@ -497,15 +539,14 @@ color: var(--side2-color);
 .page-six p{
 margin-top: 20px;
 margin-bottom:15px;
-color: white;
-opacity: var(--main-opacity);
+color: rgba(255, 255, 255, 0.735);
 font-size: var(--main-fontsize);
 letter-spacing: 1px;
-font-family: var(--second-font);
-font-weight: 200;
-text-align: left;
+font-family: var(--first-font);
+font-weight: 300;
+text-align: center;
 line-height: 28px;
-font-size: .9rem;
+font-size: 1rem;
 }
 
 
@@ -513,7 +554,6 @@ font-size: .9rem;
 
 .page-six button{
     margin: 20px;
-    margin-bottom: 10px;
     padding: 9px 19px;
     font-family: var(--main-font);
     background-color: var(--side1-color);
@@ -529,19 +569,6 @@ font-size: .9rem;
     
 }
 
-.pic-collection span.active{
-
-    border: 3px solid var(--side1-color);
-
-    transform: scale(1.2);
-}
-
-
-.pic-collection span:hover{
-
-    border: 3px solid var(--side1-color);
-    transform: scale(1.2);
-}
 
 .page-six img{
     width: 20px;
@@ -558,7 +585,7 @@ section.last{
 
 .page-seven{
  position: relative;
-margin-top: 125px;
+margin-top: 130px;
     height: 510px;
 }
 
@@ -615,14 +642,14 @@ margin-left: 15px;
 
 form{
     height: 100%;
-
+   width: 74%;
    margin: auto;
     display: grid;
     place-content: center;
 }
 
 form input{
-   
+    width: 400px;
     margin-bottom: 20px;
     color: white;
     height: 50px;
@@ -652,7 +679,6 @@ input:-webkit-autofill:active
 textarea{
     color: white;
     font-size: 1rem;
-  
     background-color: transparent;
     padding: 10px ;
     border: 1px solid rgba(255, 255, 255, 0.692);
@@ -707,3 +733,7 @@ padding: 8px 10px;
     filter: invert(61%) sepia(19%) saturate(1019%) hue-rotate(122deg) brightness(96%) contrast(86%);
     transform: scale(1.04);
 }
+
+/* section{
+    height: 100vh;
+   } */

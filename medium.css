@@ -1,25 +1,14 @@
 @media only screen and (min-width: 850px){
 
+    .page-two h3{
+        font-size: 1rem;
+    }
+    
+    .page-two h4::first-letter{
+        font-size: 3rem;
+    }
+    
 
-    .skill{
-        width: 170px;
-     
-        
-    }
-    .skill h4{
-        color: var(--side2-color);
-        font-size: 1.2rem;
-        margin-bottom: -1px;
-        
-    }
-    
-    .skill p{
-        font-size: .6rem;
-        opacity: var(--main-opacity);
-        width: 140px;
-        line-height: 15px;
-    
-    }
     
     /* .main {
         height: 100%;
@@ -65,7 +54,7 @@
 
     .page-one{
         height: 100%;
-        width: 60%;
+        width: 70%;
         
     }
 
@@ -77,13 +66,13 @@
 }
 .page-three{
     height: 100%;
-    width: 40%;
+    width: 60%;
     
 }
 
 .page-four{
     height: 100%;
-    width: 50%;
+    width: 40%;
     display: grid;
     place-content: center;
 }
@@ -95,12 +84,13 @@
 }
 
 .skill{
-    width: 140px;
+   width: 60%;
 }
 
 .page-five{
     height: 100%;
     width: 60%;
+  
     
 }
 
@@ -108,7 +98,7 @@
     display: grid;
     place-content: center;
     height: 100%;
-    width: 35%;
+    width: 30%;
 }
 
 .page-seven{
@@ -126,7 +116,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70vh;
+    height: 80vh;
     margin-top: 100px;
     width: 100%;
 }
@@ -184,10 +174,9 @@ span#design{
 
 
 section.first{
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
   
-
 }
 
 li{
@@ -200,7 +189,7 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     /* margin: 20px 3px ; */
 
@@ -241,6 +230,7 @@ li{
     color: var(--side2-color);
     font-size: 1.3rem;
     margin-bottom: -1px;
+    text-align: center;
     
 }
 
@@ -249,28 +239,31 @@ li{
     opacity: var(--main-opacity);
     width: 130px;
     line-height: 18px;
+    text-align: center;
   
 
 
 }
 .skill-container{
     display: grid;
-    height: 350px;
     /* width: 460px; */
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr;
     position: absolute;
     top: 14%;
- 
+
     z-index: 3;
 }
 
+
+
+
 .mysecond{
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70vh;
+    height: 90vh;
     width: 100%;
    
 
@@ -281,7 +274,7 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60vh;
+    height: 90vh;
     width: 100%;
 
 
@@ -291,7 +284,7 @@ li{
 
 
 section.second{
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
     background-color: var(--bg2color);
   
@@ -322,7 +315,7 @@ section.second{
 }
 
 section.last{
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
     background-color: var(--bg2color);
   
@@ -377,32 +370,48 @@ nav ul{
     text-align: left;
     line-height: 30px;
 }
-.page-four p{
-    margin-top: 20px;
-    color: white;
-    opacity: var(--main-opacity);
-    font-size: var(--main-fontsize);
-    font-size: 1rem;
-    letter-spacing: 1px;
-    font-family: var(--second-font);
-    font-weight: 200;
-    text-align: left;
-    line-height: 34px;
-    margin-bottom: 30px;
-}
 
+
+    
 .page-six p{
     margin-top: 20px;
     margin-bottom:15px;
-    color: white;
-    opacity: var(--main-opacity);
+    color: rgba(255, 255, 255, 0.835);
     font-size: var(--main-fontsize);
     letter-spacing: 1px;
-    font-family: var(--second-font);
-    font-weight: 200;
-    text-align: left;
+    font-family: var(--first-font);
+    font-weight: 300;
+    text-align: center;
     line-height: 28px;
     font-size: 1rem;
+    }
+    
+
+    .page-four h4{
+        color: rgba(255, 255, 255, 0.899);
+        font-size: 1.2rem;
+        letter-spacing: var(--main-letterspace);
+        font-family: var(--second-font);
+        font-weight: 500;  
+        line-height: 33px;
+        
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    
+    
+    .page-four p{
+        margin-top: 20px;
+        color: white;
+        opacity: var(--main-opacity);
+        font-size: var(--main-fontsize);
+        font-size: .9rem;
+        letter-spacing: 1px;
+        font-family: var(--second-font);
+        font-weight: 200;
+        text-align: center;
+        line-height: 34px;
+        margin-bottom: 30px;
     }
 
     .page-seven p{
@@ -433,17 +442,21 @@ nav ul{
     }
 
 .skill-container{
+    margin-top: 20px;
     display: grid;
     height: 300px;
     /* width: 460px; */
-    width: 90%;
-    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr;
     position: absolute;
     top: 30%;
  
     z-index: 3;
 }
+
+
+
 
 .page-two h4{
     color: rgba(255, 255, 255, 0.899);
@@ -452,7 +465,7 @@ nav ul{
     font-family: var(--second-font);
     font-weight: 500;  
     line-height: 33px;
-    text-align: left;
+    text-align: center;
  
     margin-bottom: 20px;
 }
@@ -472,5 +485,9 @@ li{
     margin-left: 45px;
     
 }
+
+/*  */
+  
+  
 }
 

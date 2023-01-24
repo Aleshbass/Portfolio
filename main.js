@@ -1,4 +1,12 @@
 let projects= [
+    {
+        name: "Rehabify Vue Start-up",
+        link: "https://rehabify-601d2.web.app/",
+        src: "06.png",
+        details: `This is an on-going project and my start-up. Rehabify is a revolutionary health-tech startup that aims to revolutionize the telerehabilitation market in Nigeria by providing an affordable, 
+        accessible, and automated diagnostic tool for physiotherapy services.`
+    },
+
  {
      name: "Fitogram",
      link: "https://fitogram.netlify.app",
@@ -15,13 +23,6 @@ let projects= [
      It utilizes localstorage to save cart details. Try adding items to cart. It was my first attempt at using function constructor and it was fun.`
  },
  {
-     name: "Light web page",
-     link: "https://abasslight.netlify.app",
-     src: "03.png",
-     details: `This project is an unresponsive desktop landing page. It was one of my first design.
-     I love the color choice. I learnt the basic's of CSS throught this project. I used positioning, grid, flexbox`
- },
- {
      name: "Burna Landing page",
      link: "https://burnaboy.netlify.app",
      src: "04.png",
@@ -29,7 +30,7 @@ let projects= [
      like "writing-mode", "webkit-text-stroke", etc. I used an external JS library for the first time too. In additon, I also used the window scrollTo method to return page to default scrool position.`
  },
  {
-     name: "Fitogram",
+     name: "Calculator",
      link: "https://abasscalculator.netlify.app",
      src: "05.jpg",
      details: `This calculator project helped me develop confidence in javascript.`
@@ -78,7 +79,6 @@ project.parentElement.classList.add('active')
 project_link.addEventListener('click', (event)=>{
 
     let Url= event.target.dataset.link;
-    console.log(Url)
     window.open(Url, '_blank')
     
     })
@@ -102,7 +102,7 @@ contact.addEventListener('click', ()=>{
 
 } )
 portfolio.addEventListener('click', ()=>{
-    window.scrollTo(0, 1600)
+    window.scrollTo(0, 1700)
    
    } )
    
