@@ -642,17 +642,25 @@ margin-left: 15px;
 
 form{
     height: 100%;
-   width: 74%;
+   width: 80%;
    margin: auto;
     display: grid;
     place-content: center;
 }
+form textarea{
+    width: 70%;
+    padding: 0 20px ;
+    margin: auto;
+    margin-bottom: 10px;
+}
 
 form input{
-    width: 400px;
-    margin-bottom: 20px;
+    width: 70%;
+  
     color: white;
     height: 50px;
+    margin: auto;
+    margin-bottom: 20px;
     font-size: 1.1rem;
     background-color: transparent;
     padding: 0 20px ;
@@ -682,10 +690,11 @@ textarea{
     background-color: transparent;
     padding: 10px ;
     border: 1px solid rgba(255, 255, 255, 0.692);
+    height: 150px;
 }
 
 form button[type="submit"]{
-    width: 200px;
+    width: 60%;
     margin: auto;
     margin-top: 17px;
   height: 40px;

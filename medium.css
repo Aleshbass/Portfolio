@@ -399,6 +399,53 @@ nav ul{
         margin-bottom: 25px;
     }
     
+    form{
+        height: 100%;
+       width: 80%;
+       margin: auto;
+        display: grid;
+        place-content: center;
+    }
+    form textarea{
+        width: 100%;
+        padding: 0 20px ;
+        margin: auto;
+        margin-bottom: 10px;
+        height: 200px;
+    }
+    
+    form input{
+        width: 100%;
+      
+        color: white;
+        height: 50px;
+        margin: auto;
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+        background-color: transparent;
+        padding: 0 20px ;
+        border: 1px solid rgba(255, 255, 255, 0.692);
+        outline: none;
+    }
+
+
+    form button[type="submit"]{
+        width: 100%;
+        margin: auto;
+        margin-top: 17px;
+        margin-left: 20px;
+      height: 60px;
+      color: white;
+      font-family: var(--main-font);
+      font-size: 1.91rem;
+      letter-spacing: 3px;
+      font-weight: 700;
+      /* background: linear-gradient(to right, rgba(199, 67, 166, 0.582) 0%, #25a897 97%); */
+      background-color:#4cac9f;
+      border: none;
+      transition: all .1s linear;
+    }
+    
     
     .page-four p{
         margin-top: 20px;
